@@ -10,7 +10,7 @@ spec:
     targetRevision: main
     path: declarative_approach/online_shop
   destination:
-    server: https://172.31.6.84:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: https://172.31.2.174:33893   # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:
