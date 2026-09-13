@@ -10,7 +10,7 @@ spec:
     targetRevision: main
     path: cli_approach/apache    # path of Apache app in `argocd-demos` repo
   destination:
-    server: https://172.31.6.84:33893 # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: https://kubernetes.default.svc # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:
