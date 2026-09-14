@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LondheShubham153/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
+    repoURL: https://github.com/santoshk51/argocd-demos.git # Repo containing child apps(that you have forked and cloned earlier)
     targetRevision: main
     path: ui_approach/nginx      # path of Nginx app in `argocd-demos` repo
   destination:
-    server: https://172.31.6.84:33893 # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: https://172.26.199.141:6443  # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default           # Deploys into default namespace
   syncPolicy:
     automated:
